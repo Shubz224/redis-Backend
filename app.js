@@ -27,7 +27,7 @@ app.use(helmet({
 // CORS configuration
 const corsOptions = {
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://yourdomain.com'] 
+    ? ['https://ecom-frontend-pi-sandy.vercel.app'] 
     : ['http://localhost:3000', 'http://localhost:3001'], // React dev server
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
